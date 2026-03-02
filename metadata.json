@@ -1,0 +1,7 @@
+{
+  "name": "IELTS-Typing_Pro",
+  "description": "A comprehensive AI-powered learning platform combining typing practice with IELTS preparation (Listening, Reading, Writing, Speaking).",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

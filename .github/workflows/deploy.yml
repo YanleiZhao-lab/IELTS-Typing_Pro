@@ -1,0 +1,39 @@
+name: Auto Deploy
+
+on:
+  push:
+    branches: [main]
+
+# Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    concurrency: ci-${{ github.ref }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install and Build
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Project
+        run: npm run build
+        env:
+          # If you have added API_KEY to GitHub Secrets, it will be injected here.
+          # If not, the build will still succeed, but AI features won't work on the deployed site until configured.
+          API_KEY: ${{ secrets.API_KEY }}
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist
+          # This action uses the internal 'GITHUB_TOKEN' automatically, 
+          # so NO manual secret configuration is needed for this step.
