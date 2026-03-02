@@ -90,7 +90,7 @@ IELTS-Typing_Pro 不仅帮助你通过“肌肉记忆”掌握高频词汇，还
 
 ### 方式一：Vercel (一键部署)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/ZhaoSeven7/IELTS-Typing_Pro&env=API_KEY)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/YanleiZhao-lab/IELTS-Typing_Pro&env=API_KEY)
 
 1. 点击上方的 **Deploy with Vercel** 按钮。
 2. Vercel 会自动克隆本仓库，并提示配置环境变量。

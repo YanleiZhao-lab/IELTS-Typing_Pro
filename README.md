@@ -90,7 +90,7 @@ Instead of rote memorization, IELTS-Typing_Pro helps you build "muscle memory" f
 
 ### Option 1: Vercel (One-Click Deploy)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/ZhaoSeven7/IELTS-Typing_Pro&env=API_KEY)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/YanleiZhao-lab/IELTS-Typing_Pro&env=API_KEY)
 
 1. Click the **Deploy with Vercel** button above.
 2. Vercel will clone the repository and ask for Environment Variables.
